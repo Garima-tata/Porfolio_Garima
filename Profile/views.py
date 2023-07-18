@@ -45,7 +45,7 @@ def index(request):
     return render(request, 'home.html')
 
 def Resume(request):
-    return render(request, 'Resume.html')
+    return render(request, 'resume.html')
 def Projects(request):
     return render(request, 'Projects.html')
 def About(request):
