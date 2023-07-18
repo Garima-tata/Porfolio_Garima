@@ -37,17 +37,6 @@
           <li><a href="/resume/">  <i class="fas fa-file-alt"></i>&nbsp; Skills</a></li>
           <li><a href="/projects/"><i class="fas fa-briefcase"></i>&nbsp; Projects</a></li>
           <li><a href="/about/">   <i class="fas fa-user"></i>&nbsp; About Me</a></li>
-
-          {% if user.is_superuser %}
-              <!-- <li><a href="/magic/">Magic</a></li> -->
-              <li><a href="/admin/">Admin</a></li>
-          {% endif %}
-
-          {% if user.is_authenticated %}
-          <li><a href="/logout/"><i class="fas fa-sign-out-alt"></i>&nbsp; Logout</a></li>
-          {% else %}
-          <li><a href="/login/"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</a></li>
-          {% endif %}
         </ul>
       </div>
 </nav>
@@ -58,16 +47,7 @@
           <li><a href="/projects/"><i class="fas fa-laptop-code"></i>&nbsp;  Projects</a></li>
           <li><a href="/about/"><i class="fas fa-info-circle"></i>&nbsp;  About Me</a></li>
 
-          {% if user.is_superuser %}
-              <!-- <li><a href="/magic/">Magic</a></li> -->
-              <li><a href="/admin/">Admin</a></li>
-          {% endif %}
-
-          {% if user.is_authenticated %}
-              <li><a href="/logout"><i class="fas fa-sign-in-alt"></i>&nbsp;  Logout</a></li>
-          {% elif not user.logged_in %}
-              <li><a href="/login"><i class="fas fa-sign-out-alt"></i>&nbsp;  Login</a></li>
-          {% endif %}
+          
 
       </ul>
 </div>
