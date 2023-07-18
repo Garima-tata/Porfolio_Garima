@@ -1,13 +1,38 @@
 <!-- <nav style="background-color: #b56467 "> -->
 <nav style="background-color: rgb(62 113 137);">
 <!-- <nav style="background-image: url('/static/assets/Navbar.jpg'); "> -->
-    
+  <style>
+   .container .nav-wrapper a.brand-logo img {
+        height: 50px;
+      }
+    @media screen and (max-width: 500px) {
+      .container .nav-wrapper a.brand-logo img {
+        /* Reset float property for smaller screens */
+        float: none;
+        /* Adjust margin to move the logo to the end corner */
+        margin-left: 260px;
+        height: 45px;
+      }
+      
+    }
+    @media screen and (max-width: 950px) and (min-width: 500px ) {
+      .container .nav-wrapper a.brand-logo img {
+        /* Reset float property for smaller screens */
+        float: none;
+        /* Adjust margin to move the logo to the end corner */
+        margin-left: 400px;
+      }
+    }
+  </style>
+  
+
+  
+  
 <div class="container" >
     <div class="nav-wrapper">
-        <a href="/" class="brand-logo"><img src="/static/assets/logo2.png" alt="" style="height: 55px; border-radius: 50px; margin-bottom: 5px;" class="responsive-img" ></a>
+        <a href="/" class="brand-logo"><img src="/static/assets/logo2.png" alt="" style=" border-radius: 50px; margin-bottom: 5px;" ></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-
           <li><a href="/">         <i class="fas fa-home"></i>&nbsp; Home</a></li>
           <li><a href="/resume/">  <i class="fas fa-file-alt"></i>&nbsp; Skills</a></li>
           <li><a href="/projects/"><i class="fas fa-briefcase"></i>&nbsp; Projects</a></li>

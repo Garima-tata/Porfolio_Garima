@@ -77,17 +77,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Profile.wsgi.application'
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('profiledb'),
-        'USER': os.environ.get('root'),
-        'PASSWORD': os.environ.get('Anmol@2004'),
-        'HOST': os.environ.get('localhost'),
-        'PORT': os.environ.get('3306'),
-    }
-}
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.environ.get('profiledb'),
+#         'USER': os.environ.get('root'),
+#         'PASSWORD': os.environ.get('Anmol@2004'),
+#         'HOST': os.environ.get('localhost'),
+#         'PORT': os.environ.get('3306'),
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
