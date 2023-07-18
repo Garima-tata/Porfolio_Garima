@@ -1,0 +1,49 @@
+<!-- <nav style="background-color: #b56467 "> -->
+<nav style="background-color: rgb(62 113 137) ">
+<!-- <nav style="background-image: url('/static/assets/Navbar.jpg'); "> -->
+    
+<div class="container">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><img src="/static/assets/logo2.png" alt="" style="height: 55px; border-radius: 50px; margin-bottom: 5px;" class="responsive-img" ></a>
+        
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+
+          <li><a href="/">         <i class="fas fa-home"></i>&nbsp; Home</a></li>
+          <li><a href="/resume/">  <i class="fas fa-file-alt"></i>&nbsp; Skills</a></li>
+          <li><a href="/projects/"><i class="fas fa-briefcase"></i>&nbsp; Projects</a></li>
+          <li><a href="/about/">   <i class="fas fa-user"></i>&nbsp; About Me</a></li>
+
+          {% if user.is_superuser %}
+              <!-- <li><a href="/magic/">Magic</a></li> -->
+              <li><a href="/admin/">Admin</a></li>
+          {% endif %}
+
+          {% if user.is_authenticated %}
+          <li><a href="/logout/"><i class="fas fa-sign-out-alt"></i>&nbsp; Logout</a></li>
+          {% else %}
+          <li><a href="/login/"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/"><i class="fas fa-home"></i>&nbsp;  Home</a></li>
+          <li><a href="/resume/"><i class="fas fa-user-graduate"></i>&nbsp;  Skills</a></li>
+          <li><a href="/projects/"><i class="fas fa-laptop-code"></i>&nbsp;  Projects</a></li>
+          <li><a href="/about/"><i class="fas fa-info-circle"></i>&nbsp;  About Me</a></li>
+
+          {% if user.is_superuser %}
+              <!-- <li><a href="/magic/">Magic</a></li> -->
+              <li><a href="/admin/">Admin</a></li>
+          {% endif %}
+
+          {% if user.is_authenticated %}
+              <li><a href="/logout"><i class="fas fa-sign-in-alt"></i>&nbsp;  Logout</a></li>
+          {% elif not user.logged_in %}
+              <li><a href="/login"><i class="fas fa-sign-out-alt"></i>&nbsp;  Login</a></li>
+          {% endif %}
+
+      </ul>
+</div>

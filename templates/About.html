@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<div class="container" style="padding: 10px;">
+    <br>
+    <br>
+        
+    <h2 align="center">About Me</h2>
+    <p style="font-size: 20px;">
+        My name is Garima Tata and I am currently pursuing my BTech degree in Data Science and Artificial Intelligence from IIT Bhilai, India. I am passionate about exploring the world of technology and its applications in solving real-world problems.
+        <br>
+        I am currently studying at IIT Bhilai, one of the premier institutes for higher education in India. I am specializing in Data Science and Artificial Intelligence, which allows me to explore various aspects of these fields, including data analysis, machine learning algorithms, and AI applications.
+        <br>
+        <br>
+        <br>
+        <br>
+</div>
+
+<!-- Include Materialize CSS and JavaScript -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+    });
+</script>
+{% endblock %}

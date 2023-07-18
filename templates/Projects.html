@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Projects
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .parallax-container {
+    position: relative;
+    height: 400px;
+  }
+
+  .parallax-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .white {
+    background-color: rgb(134 171 207 / 60%) !important;
+    }
+
+</style>
+
+
+<div class="parallax-container" style="margin-top: 3px;">
+  <div class="parallax">
+    <img src="/static/assets/ML.jpg" >
+    <h2 class="parallax-header">DSAI Projects</h2>
+  </div>
+</div>
+
+<div class="section white center-align">
+  <div class="row container">
+    <p class="grey-text text-darken-3 lighten-3">
+            <div >
+                <ul style="list-style: none; font-size: 21px; color: black; text-align:justify;">
+                    <li> <i class="fas fa-hand-point-right"></i> &nbsp; Prediction Of stocks: Reasearch Paper Analysis</li>
+                    <li> <i class="fas fa-hand-point-right"></i> &nbsp; DendroMap: Revisited the Paper</li>
+                </ul>
+            </div>
+    </p>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="/static/assets/html1.jpg">
+    <h2 class="parallax-header">Web-Dev Projects</h2>
+  </div>
+</div>
+
+<div class="section white">
+  <div class="row container">
+    <p class="grey-text text-darken-3 lighten-3">
+        <div class="center-align">
+            <ul style="list-style: none; font-size: 18px; color: black; text-align: justify;">
+               
+                <li>  <i class="fas fa-hand-point-right"></i> &nbsp; Blogging Website using Django</li>
+                <li>  <i class="fas fa-hand-point-right"></i> &nbsp; Social Media App using Django</li>
+                <li>  <i class="fas fa-hand-point-right"></i> &nbsp; ChatGPT using React/Node.js</li>
+                <li>  <i class="fas fa-hand-point-right"></i> &nbsp; Youtube using React/Node.js</li> 
+            </ul>
+        </div>
+    </p>
+  </div>
+</div>
+
+{% endblock %}

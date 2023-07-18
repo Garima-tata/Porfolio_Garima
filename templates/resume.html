@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Skills
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+  /* .slider .indicators {
+    display: none;
+  } */
+  .slider .duration{
+    transition-duration: 0.1s;
+  }
+</style>
+<!-- Add the necessary CSS file for the slider -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- <div style="padding: 50px;"> -->
+   
+   <!-- <div class="row">
+        <div class="col s12 m3">
+           <p style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skills Mastered</p>
+           <br>
+           <div>
+                <ul style="list-style: none; font-size: 18px;">
+                    <li style="list-style-type: circle;">Python</li>
+                    <li style="list-style-type: circle;">Cpp</li>
+                    <li style="list-style-type: circle;">R</li>
+                    <li style="list-style-type: circle;">HTML</li>
+                    <li style="list-style-type: circle;">CSS</li>
+                </ul>
+           </div>
+        </div>
+        
+        <div class="col s12 m3">
+           <p style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skills Mastering</p>
+           <br>
+           <div>
+            <ul style="list-style: none; font-size: 18px;">
+                <li style="list-style-type: circle;">JavaScript</li>
+                <li style="list-style-type: circle;">Machine Learning</li>
+                <li style="list-style-type: circle;">React</li>
+                <li style="list-style-type: circle;">Node.js</li>
+                <li style="list-style-type: circle;">BlockChain</li>
+            </ul>
+       </div>
+    </div>
+</div> -->
+
+<!-- Add the necessary JavaScript files for the slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<br>
+
+
+
+
+<div class="slider">
+    <ul class="slides" style="background-color: rgb(26, 37, 85);">
+      
+      <li >
+        <img class="responsive-img" src="/static/assets/back.jpg" style="filter: blur(2px);"  alt="Helli">
+        <div class="caption center-align">
+                <div class="row">
+                    <div class="col s12 m6" style="color: white;">
+                          <h3 >Skills</h3>
+                          <h5 class="light grey-text text-lighten-3">I Learnt</h5>
+                    </div>
+                    <div class="col s12 m6" style="color: white;">
+                          <h5>Python</h5>
+                          <h5>CPP</h5>
+                          <h5>HTML </h5>
+                          <h5> CSS</h5>
+                          <h5> R</h5>
+                          <h5>Django</h5>
+                      
+                    </div>
+                </div>
+        </li>
+      
+      
+      <li>
+        <img class="responsive-img" src="/static/assets/back.jpg" style="filter: blur(5px);" alt="Helli">
+        <div class="caption center-align">
+            <div class="row">
+                <div class="col s12 m6" style="color: white;">
+                      <h3>Skills</h3>
+                      <h5 class="light grey-text text-lighten-3">I am Learning</h5>
+                </div>
+                <div class="col s12 m6" style="color: white;">
+                      <h5>Machine Learning</h5>
+                      <h5>JavaScript</h5>
+                      <h5>BlockChain</h5>
+                      <h5>React.js</h5>
+                      <h5>Node.js</h5>
+                </div>
+            </div>
+          </div>
+      </li>
+    </ul>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, {
+          interval: 2000 // Set the interval to 1000 milliseconds (1 second)
+      });
+  });
+</script>
+    
+{% endblock %}

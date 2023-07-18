@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+CCPS
+{% endblock %}
+
+{% block content %}
+
+
+<H1 class="container">For All the CCPS members</H1>
+<br>
+<p class="container" style="font-size: larger; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    If you are a CCPS member, you can access this Email Sending facility:
+    I have feeded the Standard Mail Template.
+    You can send the mail to all the members of CCPS by just clicking on the button below.
+</p>
+    
+<div class="container">
+
+    <form action="">
+        <label for="">Mail ID:</label>
+        <input type="text" placeholder="Enter the Email ID of HR">
+        <label for="">CC:</label>
+        <input type="text" placeholder="Enter the name to enter in CC">
+        <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color: cadetblue;">Send Mail
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</div>
+{% endblock %}
