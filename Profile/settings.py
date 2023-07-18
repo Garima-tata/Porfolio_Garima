@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'Profile.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'profiledb',
-        'USER': 'root',
-        'PASSWORD': 'Anmol@2004',
-        'HOST': 'localhost',  # Change this to your MySQL server's host if necessary
-        'PORT': '3306',       # Change this to your MySQL server's port if necessary
+        'NAME': os.environ.get('profiledb'),
+        'USER': os.environ.get('root'),
+        'PASSWORD': os.environ.get('Anmol@2004'),
+        'HOST': os.environ.get('localhost'),
+        'PORT': os.environ.get('3306'),
     }
 }
 
