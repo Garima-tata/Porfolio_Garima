@@ -7,7 +7,11 @@ Home
 {% block content %}
 
 <style>
-    img.responsive-img, video.responsive-video {
+
+@media screen and (max-width: 600px) {
+    
+}
+img.responsive-img, video.responsive-video {
     max-width: 250px;
     height: 150px;
 }
@@ -26,7 +30,7 @@ Home
 
     <!-- <div class="container" align="center" style="font-family: 'Dancing Script', cursive;"> -->
     <div class="container" align="center" style="font-family: 'kenyan-coffee_regular'">
-        <h1 style="padding-top:12.8px; font-size: 40px;">Welcome to My Portfolio</h1>
+        <h1 style="padding-top:12.8px; font-size: 50px;">Welcome to My Portfolio</h1>
     </div>
     <br>
     <div class="container-xl">
@@ -55,6 +59,7 @@ Home
             </div>
 
     </div>
+    <br>
     <br>
     <script>
         $(document).ready(function(){
